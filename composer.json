@@ -1,0 +1,27 @@
+{
+    "name": "mahmutbayri/php-sse-react-redis-example",
+    "keywords": ["Server-Sent Events", "SSE", "EventSource", "event-driven", "ReactPHP", "async", "redis"],
+    "description": "Streaming, async HTML5 Server-Sent Events server (aka. SSE or EventSource)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahmut Bayri",
+            "email": "mahmutbayri@yahoo.com"
+        }
+    ],
+    "require": {
+        "clue/sse-react": "dev-master",
+        "react/async": "3.x",
+        "illuminate/support": "^6.19",
+        "symfony/var-dumper": "^4.4",
+        "clue/redis-react": "^2.5",
+        "clue/block-react": "^1.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    }
+}
