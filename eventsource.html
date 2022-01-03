@@ -60,7 +60,7 @@
     })
 
     sse.addEventListener("error", function (e) {
-        sse.close()
+        // sse.close()
         console.error("EventSource failed:", e);
     })
 
@@ -113,8 +113,8 @@
 
         const countrySlug = updateData.country;
         let animation = window.countryMainData[countrySlug].population > updateData.population
-            ? 'blinkerGreen 2s linear 1'
-            : 'blinkerRed 2s linear 1';
+            ? 'blinkerRed 2s linear 1'
+            : 'blinkerGreen 2s linear 1';
         const updatedCountryData = Object.assign(window.countryMainData[countrySlug], {population: updateData.population});
         const elemements = window.elements[countrySlug];
 
